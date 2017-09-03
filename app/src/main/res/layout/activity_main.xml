@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.alexanderlisovik.gigya.MainActivity">
+
+    <EditText
+        android:id="@+id/defaultLanguageEditTextId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:textSize="16sp"
+        android:hint="Default Language"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/loginIdentifiersEditTextId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="Login Identifiers"
+        android:ems="10"
+        android:textSize="16sp"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/defaultLanguageEditTextId"
+        android:layout_centerHorizontal="true" />
+
+    <Spinner
+        android:id="@+id/loginIdentifiersSpinnerId"
+        android:layout_below="@+id/loginIdentifiersEditTextId"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/loginIdentifiersTextViewId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginIdentifiersEditTextId"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:text="Ignore"
+        android:textSize="16sp" />
+
+
+    <Button
+        android:id="@+id/saveButtonId"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp" />
+
+    <Button
+        android:id="@+id/readOnlyButtonId"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Read Only"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="210dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp" />
+
+    <CheckBox
+        android:id="@+id/allowUnverifiedCheckBoxId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginIdentifiersSpinnerId"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:text="Allow Unverified Login"
+        android:textSize="14sp" />
+
+    <CheckBox
+        android:id="@+id/preventLoginCheckBoxId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/allowUnverifiedCheckBoxId"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:text="Prevent Login ID Harvesting"
+        android:textSize="14sp" />
+
+    <CheckBox
+        android:id="@+id/sendAccountDeletedEmailCheckBoxId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/preventLoginCheckBoxId"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:text="Send Account Deleted Email"
+        android:textSize="14sp" />
+
+    <CheckBox
+        android:id="@+id/sendWelcomeEmailCheckBoxId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sendAccountDeletedEmailCheckBoxId"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:text="Send Welcome Email"
+        android:textSize="14sp" />
+
+    <CheckBox
+        android:id="@+id/verifyEmailCheckBoxId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sendWelcomeEmailCheckBoxId"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:text="Verify Email"
+        android:textSize="14sp" />
+
+    <CheckBox
+        android:id="@+id/verifyProviderEmailCheckBoxId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/verifyEmailCheckBoxId"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:text="Verify Provider Email"
+        android:textSize="14sp" />
+
+
+
+
+
+
+</RelativeLayout>
